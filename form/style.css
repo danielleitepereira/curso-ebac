@@ -1,0 +1,59 @@
+body {
+  font-size: 16px;
+  background-color: #fffefc;
+}
+
+h3 {
+  font-family: playfair display;
+  font-size: 1.8rem;
+  text-align: center;
+}
+label,
+a {
+  font-family: source serif pro;
+}
+
+ul,
+li,
+a {
+  display: flex;
+  justify-content: right;
+  padding: 5px;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+}
+
+.imagem {
+  max-width: 100%;
+  display: grid;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.nome,
+.email,
+.mensagem,
+.submit {
+  
+  padding: 5px;
+  }
+
+.card {
+  position: relative ;
+  top: -20px;
+  background-color: bisque;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}

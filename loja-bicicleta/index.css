@@ -1,0 +1,312 @@
+/*FONTES*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display&family=Roboto:ital,wght@1,100&family=Rowdies:wght@300;700&family=Source+Sans+Pro&family=Source+Serif+Pro:wght@300&display=swap");
+
+/*ATRIBUTOS PADRÕES*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rowdies", cursive;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+
+
+/*NAVEGAÇÃO*/
+
+.lista {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  align-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.lista--item:nth-child(2n):hover,
+.lista--item:nth-child(3):hover {
+  border-bottom: 1px solid;
+}
+
+.lista--link {
+  text-decoration: none;
+  color: black;
+}
+
+/*MAIN*/
+
+.main--apresentacao {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#ffffff, #e7e7e7, #ffffff);
+}
+.banner--img {
+  width: 700px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.contato--whats {
+  width: 95%;
+  height: 90vh;
+  display: flex;
+  position: fixed;
+  justify-content: end;
+  align-items: end;
+}
+
+.contato--logowhats {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 1323px) {
+  
+  .main--apresentacao {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background: none;
+  }
+
+  .banner--img {
+    display: none;
+  }
+}
+
+/*PRODUTOS*/
+
+.section--produtos {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.produto--item__img {
+  width: 300px;
+}
+
+.produto--title {
+  text-align: center;
+}
+
+.btn--comprar {
+  margin-left: 75px;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1323px) {
+  .section--produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
+
+  .produto--item__img {
+    width: 300px;
+  }
+
+  .produto--title {
+    text-align: center;
+  }
+
+  .btn--comprar {
+    margin-left: 75px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+/*SOBRE*/
+.sobre {
+  display: grid;
+  grid-template-columns: 100px repeat(2, 400px) 100px;
+  grid-template-rows: repeat(2, fit-content);
+  justify-content: center;
+  justify-items: center;
+  margin-top: 200px;
+}
+
+.sobre--img,
+.estilo--img {
+  width: 400px;
+}
+
+.sobre--descricao {
+  grid-column: 2;
+}
+
+.sobre--descricao h3 {
+  text-align: center;
+}
+
+.sobre--descricao p {
+  text-align: start;
+  padding: 20px;
+}
+
+.sobre--img {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/*PEDALANDO COM ESTILO*/
+
+.sobre--estilo {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.sobre--estilo h3 {
+  text-align: center;
+}
+
+.sobre--estilo p {
+  padding: 20px;
+  text-align: start;
+}
+
+.estilo--img {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+@media (max-width: 1323px) {
+  .sobre {
+    padding: 0 250px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .sobre--descricao , .sobre--estilo{
+    text-align: center;
+  }
+
+  .sobre img{
+    margin: 0 auto;
+  }
+}
+
+/*CONTATO*/
+
+.contato {
+  background-color: white;
+  box-shadow: 5px 10px 10px #e7e7e7;
+  margin: 100px 600px;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contato--form {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: repeat(4, 80px);
+  justify-content: center;
+  align-items: center;
+}
+
+.contato--item {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: #cccccc;
+}
+
+.contato--item01 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.contato--item02 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.contato--item03 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.contato--btn {
+  color: black;
+  background-color: white;
+  border: 1px solid;
+  margin: 0 100px;
+  grid-row: 4;
+}
+
+
+@media (max-width: 1323px) {
+  /*Para funcionar o card , talvez mais uma section só entre .contato e .contato--form*/
+  .contato {
+    padding: 0;
+    /*background-color: white;*/
+    /*box-shadow: 5px 10px 10px #e7e7e7;*/
+    background-color: none;
+    box-shadow: none;
+    border-radius: 10px;
+    
+  }
+
+
+
+  .contato h3{
+    width: 100px;
+    text-align: center;
+  }
+
+  .contato--form{
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+
+}
+
+
+/*FOOTER*/
+
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  max-width: 30px;
+}
+
+@media (max-width: 1323px) {
+  footer {
+    width: 100%;
+  }
+}

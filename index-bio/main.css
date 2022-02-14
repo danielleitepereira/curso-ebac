@@ -1,0 +1,281 @@
+*{
+    font-family: Open Sans;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+a{
+    color:#e7ab13; 
+    font-weight: bold; 
+    
+}
+
+
+header{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color:#fec42f;
+   background-clip: padding-box;
+   backdrop-filter: blur(40px);
+   
+}
+
+nav ul li a {
+    
+    color: black;
+    
+}
+
+nav ul {
+    display: flex;
+    
+    
+}
+
+li{
+    
+    padding-right: 20px;
+}
+
+
+h1, h3, h6, p{
+    padding: 0;
+    margin: 0;
+}
+
+h6{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1,h3{
+    color: rgb(38, 39, 102);
+}
+
+img{
+    display: block;
+    max-width: 100%; 
+}
+
+
+.coluna1{
+    display: grid;
+    grid-template-columns: repeat(2, 250px) ;
+    gap: 100px;
+    margin-top: 150px;
+    place-content: center;
+    place-items: center;
+}
+
+@media(max-width: 765px){
+    .coluna1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px; 
+    }
+
+    .foto--perfil{
+       max-width: 300px;
+    }
+
+    .descricao h3, h1 , h6 , p{
+       text-align: center;   
+    }
+}
+
+
+.descricao{
+    text-align: left;
+}
+
+
+.foto--perfil {
+    border-radius: 200px;
+}
+
+.card--btn{
+    margin-top: 10px;
+    grid-column: span 2;
+}
+
+.button a{
+    color: white;
+}
+
+
+.button, .button2 {
+    margin-left: 20px;
+    border: 2px solid #fec42f;
+    padding: 20px;
+    border-radius: 100px;
+    background-color: white;   
+}
+
+ .button{
+    background-color: #fec42f;   
+}
+
+
+.button{
+    color: white;
+    background-color: #fec42f;
+}
+
+
+.button:hover{
+    color: #fec42f;
+    background-color: white;
+    
+}
+
+/*DESCRIÇÃO BIO*/
+
+.bio{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    place-content: center;
+    place-items: center;
+    grid-template-rows: repeat(3, 150px);
+    margin-top: 100px;  
+}
+
+.bio--title h1{
+    padding-right: 190px;
+    grid-template-rows:1 ;
+}
+
+.bio--text{
+    grid-column-start: 2;
+    grid-row-start: span 2;
+    
+}
+
+.bio--img{
+    grid-row: span 2;
+    
+}
+
+@media(max-width: 765px){
+    .bio{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+       
+    }
+
+    .bio--img{
+       max-width: 300px;
+    }
+
+    .bio--text h3, h1 , h6 , p{
+       text-align: center; 
+       padding: 0 80px;
+       
+    }
+}
+
+/*PROJETOS*/
+
+.proj{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    justify-content: center;
+    text-align: center;
+  
+}
+
+.proj h1{
+    grid-column: 2;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.proj img{
+    padding-top: 25px;
+}
+
+.proj--tab{
+    text-align: center;
+    grid-row-start: 4 ;
+}
+
+.proj--tab img:hover{
+    transform: scale(2.0);
+}
+
+.proj--form{
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.proj--form img:hover{
+    transform: scale(2.0);
+}
+
+.proj--bike{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.proj--bike img:hover{
+    transform: scale(2.0);
+}
+
+.proj__gap{
+    padding: 10px;
+}
+
+@media(max-width: 765px){
+    .proj{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        place-items: center;
+        
+       
+    }
+
+    .proj img{
+       max-width: 400px;
+    }
+
+    .descricao h3, h1 , h6 , p{
+       text-align: center; 
+    }
+}
+
+
+footer h6{
+    margin-right: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer img{
+    max-width: 20px;
+}
+
+.redes{
+    margin-left: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img--logo{
+    max-width: 30px;
+    padding-right: 100px;
+   
+}
